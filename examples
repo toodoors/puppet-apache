@@ -1,0 +1,7 @@
+class webserver {
+  if $::osfamily == 'Debian' {
+    package { 'httpd' :
+      ensure => 'present',
+    }
+  }
+}
